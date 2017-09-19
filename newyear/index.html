@@ -3,8 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>新年快乐</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.blue-slide {
+	background: #4390EE;
+}
+.red-slide {
+	background: #CA4040;
+}
+.orange-slide {
+	background: #FF8604;
+}
+.swiper-slide {
+	height: 100%;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+}
+.swiper-container{
+	height: 100%;
+}
+</style>
 </head>
-<body>
-	<h2>新年大吉</h2>
+<body >
+	<div class="swiper-container">
+	  	<div class="swiper-wrapper">
+	    	<div class="swiper-slide blue-slide">slider1</div>
+	    	<div class="swiper-slide red-slide">slider2</div>
+	    	<div class="swiper-slide orange-slide">slider3</div>
+	  	</div>
+	  	<div class="swiper-pagination"></div>
+	</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.js"></script>
+<script type="text/javascript">
+  var mySwiper = new Swiper('.swiper-container',{
+	autoplay: 3000,     //循环时间
+	direction:'vertical', //方向
+	height : window.innerHeight,
+	pagination : '.swiper-pagination',
+	paginationClickable :true,
+  });
+</script>
+ <script type="text/javascript">
+	$(document).ready(function () {
+		
+	})
+</script>
 </body>
 </html>
