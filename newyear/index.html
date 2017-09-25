@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>新年快乐</title>
+	<title>中秋快乐</title>
 	<link rel="stylesheet" href="css/swiper.min.css">
 <style>
 html {
@@ -10,6 +10,9 @@ html {
 }
 body {
 	height: 100%;
+	background-image:url("img/bg.jpg");
+	background-repeat:no-repeat;
+	background-size: 120%;
 }
 * {
 	margin: 0;
@@ -17,7 +20,10 @@ body {
 	border: 0;
 }
 .blue-slide {
-	background: #4390EE;
+	width: 100%;
+	height: 100%;
+	/*background-image:url('img/bg.jpg');*/
+	/*background: #4390EE;*/
 }
 .red-slide {
 	background: #CA4040;
@@ -34,12 +40,170 @@ body {
 .swiper-container{
 	height: 100%;
 }
+.img{
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top: 150px;
+	width: 500px;
+	height: 500px;
+}
+.img img{
+	width: 100%;
+	height: 100%;
+}
+.yueling{
+	position: relative;
+	background-image:url("img/xx.png");
+	background-repeat:repeat;
+	background-size: 40%;
+}
+.yun1{
+	position: absolute;
+	left: 300px;
+	top: 50px;
+}
+.yun2{
+	position: absolute;
+	left: 200px;
+	top: 300px;
+}
+.yun3{
+	position: absolute;
+	left:650px;
+	top: 350px;
+}
+.tu1{
+	position: absolute;
+	left: 550px;
+	top: -20px;
+}
+.tu2{
+	position: absolute;
+	left: 200px;
+	top: 200px;
+}
+.tu3{
+	position: absolute;
+	left:650px;
+	top: 250px;
+}
+.zq{
+	position: absolute;
+	left:400px;
+	top: 100px;
+	width: 100px;
+	height: 200px;
+	animation:mymove 2s;
+	animation-direction:1;
+	-webkit-animation:mymove 2s; /*Safari and Chrome*/
+}
+@keyframes mymove
+	{
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+
+@-webkit-keyframes mymove 
+{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+.zq img{
+	width:100%;
+	height: 100%;
+}
+.ty{
+	position: absolute;
+	left:520px;
+	top: 200px;
+	width: 100px;
+	height: 200px;
+	animation:mymovez 4s;
+	animation-direction:1;
+	animation-fill-mode :forwards ;
+	-webkit-animation:mymovez 4s; /*Safari and Chrome*/
+}
+@keyframes mymovez
+	{
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+@-webkit-keyframes mymovez 
+{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+.ty img{
+	width:100%;
+	height: 100%;
+}
+footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+article{
+	margin-top: 200px;
+}
+article p{
+	text-align: left;
+	line-height: 2;
+	text-indent: 2em;
+	padding-left: 40px;
+	padding-right:  40px;
+	animation:mymovezz 2s ;
+}
+@keyframes mymovezz
+	{
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+
 </style>
 </head>
-<body >
+<body>
 	<div class="swiper-container">
 	  	<div class="swiper-wrapper">
-	    	<div class="swiper-slide blue-slide">slider1</div>
+	    	<div class="swiper-slide blue-slide">
+	    		<div class="yueling">
+		    		<div class="img">
+						<img src="img/yue.png" alt="">
+		    		</div>
+		    		<!-- 云 兔子 -->
+		    		<div class="yun1">
+		    			<img src="img/yun2.png" alt="">
+		    		</div>
+		    		<div class="tu1">
+		    			<img src="img/tu2.png" alt="">
+		    		</div>
+		    		<div class="yun2">
+		    			<img src="img/yun1.png" alt="">
+		    		</div>
+		    		<div class="tu2">
+		    			<img src="img/tu1.png" alt="">
+		    		</div>
+		    		<div class="yun3">
+		    			<img src="img/yun2.png" alt="">
+		    		</div>
+		    		<div class="tu3">
+		    			<img src="img/tu3.png" alt="">
+		    		</div>
+		    		<div class="zq">
+		    			<img src="img/zq.png" alt="">
+		    		</div>
+		    		<div class="ty">
+		    			<img src="img/yun4.png" alt="">
+		    		</div>
+	    		</div>
+	    		<article>
+					<p>每年农历八月十五日，是传统的中秋佳节。这时是一年秋季的中期，所以被称为中秋。在中国的农历里，一年分为四季，每季又分为孟、仲、季三个部分，因而中秋也称仲秋。八月十五的月亮比其他几个月的满月更圆，更明亮，所以又叫做“月夕”，“八月节”。此夜，人们仰望天空如玉如盘的朗朗明月，自然会期盼家人团聚。远在他乡的游子，也借此寄托自己对故乡和亲人的思念之情。所以，中秋又称“团圆节”。</p>
+	    		</article>
+	    		<footer>
+	    			<div>
+	    				<img src="img/next.png" alt="">
+	    			</div>
+	    		</footer>
+	    	</div>
 	    	<div class="swiper-slide red-slide">slider2</div>
 	    	<div class="swiper-slide orange-slide">slider3</div>
 	  	</div>
@@ -49,7 +213,7 @@ body {
 <script src="js/swiper.jquery.js"></script>
 <script type="text/javascript">
   var mySwiper = new Swiper('.swiper-container',{
-	autoplay: 3000,     //循环时间
+	//autoplay: 3000,     //循环时间
 	direction:'vertical', //方向
 	height : window.innerHeight,
 	pagination : '.swiper-pagination',
