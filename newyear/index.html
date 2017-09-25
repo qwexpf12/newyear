@@ -26,10 +26,14 @@ body {
 	/*background: #4390EE;*/
 }
 .red-slide {
-	background: #CA4040;
+	background-image:url('img/bg2.jpg');
+	background-repeat:no-repeat;
+	background-size: 120%;	
 }
 .orange-slide {
-	background: #FF8604;
+	background-image:url('img/bg3.jpg');
+	background-repeat:no-repeat;
+	background-size: 120%;	
 }
 .swiper-slide {
 	height: 100%;
@@ -61,41 +65,83 @@ body {
 	position: absolute;
 	left: 300px;
 	top: 50px;
+	animation:mymoveyun 2s;
+	animation-direction:1;
 }
+@keyframes mymoveyun
+	{
+		from {opacity: 0;left:100px }
+		to {opacity: 1;left:300px}
+	}
 .yun2{
 	position: absolute;
 	left: 200px;
 	top: 300px;
+	animation:mymoveyuntwo 2s;
+	animation-direction:1;
 }
+@keyframes mymoveyuntwo
+	{
+		from {opacity: 0;left:100px }
+		to {opacity: 1;left:200px}
+	}
 .yun3{
 	position: absolute;
 	left:650px;
 	top: 350px;
+	animation:mymoveyunthree 2s;
+	animation-direction:1;
 }
+@keyframes mymoveyunthree
+	{
+		from {opacity: 0;left:850px }
+		to {opacity: 1;left:650px}
+	}
 .tu1{
 	position: absolute;
 	left: 550px;
 	top: -20px;
+	animation:mymovetu 3s;
+	animation-direction:1;
 }
+@keyframes mymovetu
+	{
+		from {opacity: 0;left:800px }
+		to {opacity: 1;left:550px}
+	}
 .tu2{
 	position: absolute;
 	left: 200px;
 	top: 200px;
+	animation:mymovetutwo 3s;
+	animation-direction:1;
 }
+@keyframes mymovetutwo
+	{
+		from {opacity: 0;left:0px }
+		to {opacity: 1;left:200px}
+	}
 .tu3{
 	position: absolute;
 	left:650px;
 	top: 250px;
+	animation:mymovetuthree 3s;
+	animation-direction:1;
 }
+@keyframes mymovetuthree
+	{
+		from {opacity: 0;left:850px }
+		to {opacity: 1;left:650px}
+	}
 .zq{
 	position: absolute;
 	left:400px;
 	top: 100px;
 	width: 100px;
 	height: 200px;
-	animation:mymove 2s;
+	animation:mymove 6s;
 	animation-direction:1;
-	-webkit-animation:mymove 2s; /*Safari and Chrome*/
+	-webkit-animation:mymove 6s; /*Safari and Chrome*/
 }
 @keyframes mymove
 	{
@@ -118,10 +164,10 @@ body {
 	top: 200px;
 	width: 100px;
 	height: 200px;
-	animation:mymovez 4s;
+	animation:mymovez 8s;
 	animation-direction:1;
 	animation-fill-mode :forwards ;
-	-webkit-animation:mymovez 4s; /*Safari and Chrome*/
+	-webkit-animation:mymovez 8s; /*Safari and Chrome*/
 }
 @keyframes mymovez
 	{
@@ -141,7 +187,14 @@ footer{
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
+	animation:mymovefooter 1s infinite 3s;
+	/*animation-direction:;*/
 }
+@keyframes mymovefooter
+	{
+		from {bottom: 0px;transform:scale(1,1) }
+		to {bottom: 20px;transform: scale(1.3,1.3)}
+	}
 article{
 	margin-top: 200px;
 }
@@ -151,14 +204,115 @@ article p{
 	text-indent: 2em;
 	padding-left: 40px;
 	padding-right:  40px;
-	animation:mymovezz 2s ;
+	animation:mymovezz 8s ;
 }
 @keyframes mymovezz
 	{
 		from {opacity: 0}
 		to {opacity: 1}
 	}
+	/*第二页的css*/
+.hhy{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 100px;
+	height:100px;
+}
+.hhy img{
+	width: 100%;
+}
+.zqkl{
+	position: absolute;
+	bottom: 400px;
+	right: 200px;
+	width: 200px;
+	height: 200px;
+	opacity:1;
+	animation:mymovezq 6s;
+	animation-direction:1;
+}
+.zqkl img{
+	width: 100%;
+}
+.zqk2{
+	position: absolute;
+	bottom: 100px;
+	right: 100px;
+	width: 100px;
+	height: 100px;
+	opacity:1;
+	animation:mymovezq 6s ;
+	animation-direction:1;
 
+}
+@keyframes mymovezq
+	{
+		from {opacity: 0}
+		to {opacity: 1}
+	}
+.zqk2 img{
+	width: 150%;
+}
+.zqk3{
+	position: absolute;
+	bottom: 0px;
+	right: 150px;
+	width: 100px;
+	height: 100px;
+	animation:mymovezq 6s;
+	animation-direction:1;
+}
+.zqk3 img{
+	width: 200%;
+}
+/*第三页css*/
+.slide3z{
+	position: absolute;
+	left: 200px;
+	top:200px;
+	width: 250px;
+	height: 250px;
+}
+.slide3z img{
+	width: 100%;
+}
+.slide3q{
+	position: absolute;
+	left: 400px;
+	top:500px;
+	width: 250px;
+	height: 250px;
+}
+.slide3q img{
+	width: 100%;
+}
+.zhu{
+	position: absolute;
+	left:450px;
+	right: 0px;
+	top:300px;
+	font-size: 40px;
+	background-image: url('img/3bgmin.png');
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 250px;
+}
+.dajia{
+	position: absolute;
+	left: 700px;
+	top:300px;
+	width: 60px;
+	height: 400px;
+}
+.dajia img{
+	width: 150%;
+}
+.zhuze{
+	position: absolute;
+	right: 200px;
+	bottom: 200px;
+}
 </style>
 </head>
 <body>
@@ -204,8 +358,58 @@ article p{
 	    			</div>
 	    		</footer>
 	    	</div>
-	    	<div class="swiper-slide red-slide">slider2</div>
-	    	<div class="swiper-slide orange-slide">slider3</div>
+	    	<div class="swiper-slide red-slide">
+	    		<div class="hhy">
+	    			<img src="img/hhy.png" alt="">
+	    		</div>
+	    		<section>
+		    		<article>
+		    			<aside>
+					        <h1>《水调歌头》</h1>
+					        <p style="margin-left: 600px;">宋·苏轼</p>
+					        <p>明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间？</p>
+					        <p>转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。</p>
+					    </aside>
+		    		</article>
+	    		</section>
+	    		<aside class="zqkl">
+					<img src="img/zq2.png" alt="">
+				</aside>
+				<aside class="zqk2">
+					<img src="img/tu3.png" alt="">
+				</aside>
+				<aside class="zqk3">
+					<img src="img/yun1.png" alt="">
+				</aside>
+				<footer>
+	    			<div>
+	    				<img src="img/next.png" alt="">
+	    			</div>
+	    		</footer>
+	    	</div>
+	    	<div class="swiper-slide orange-slide">
+	    		<div class="hhy">
+	    			<img src="img/hhy.png" alt="">
+	    		</div>
+	    		<div class="slide3z">
+	    			<img src="img/z.png" alt="">	
+	    		</div>
+	    		<div class="slide3q">
+	    			<img src="img/q.png" alt="">	
+	    		</div>
+	    		<section class="zhu">
+	    			<h4>薛</h4>
+	    			<h4>鹏</h4>
+	    			<h4>飞</h4>
+	    			<h4>祝</h4>
+	    		</section>
+	    		<div class="dajia">
+    				<img src="img/dj.png" alt="">
+    			</div>
+    			<div class="zhuze">
+    				<h4>薛鹏飞制作</h4>
+    			</div>
+	    	</div>
 	  	</div>
 	  	<div class="swiper-pagination"></div>
 	</div>
